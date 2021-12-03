@@ -18,10 +18,10 @@ end
 function fish_greeting
 	echo
 
-	__neko_color_echo $__neko_color_purple " _._     _,-'\"\"`-._			"\n
-	__neko_color_echo $__neko_color_purple "(,-.`._,'(       |\`-/|		    |\__/,|   (`\ "\n
-	__neko_color_echo $__neko_color_lilac "    `-.-' \ )-`( , o o)		  _.|o o  |_   ) )"\n
-	__neko_color_echo $__neko_color_lilac "          `-    \`_`\"'-		-(((---(((--------"\n
+	__neko_color_echo $__neko_color_purple 	"   _._     _,-'\"\"`-._		"\n
+	__neko_color_echo $__neko_color_purple 	"  (,-.`._,'(       |\`-/|		    |\__/,|   (`\ "\n
+	__neko_color_echo $__neko_color_lilac 	"      `-.-' \ )-`( , o o)		  _.|o o  |_   ) )"\n
+	__neko_color_echo $__neko_color_lilac 	"            `-    \`_`\"'-		-(((---(((--------"\n
 
 	echo 
 end
