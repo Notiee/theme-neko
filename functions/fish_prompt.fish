@@ -18,9 +18,9 @@ function __neko_color_echo
 end
 
 function __neko_current_date
-	__neko_color_echo $__neko_color_orange ' ['
+	__neko_color_echo $__neko_color_orange '['
 	__neko_color_echo $__neko_color_white (date "+%H:%M:%S")
-	__neko_color_echo $__neko_color_orange ']'
+	__neko_color_echo $__neko_color_orange '] '
 end
 
 function __neko_current_folder
@@ -79,8 +79,8 @@ end
 # Display prompt
 function fish_prompt
 	__neko_color_echo $__neko_color_blue "# "
-	__neko_color_echo $__neko_color_purple (__neko_current_folder)
 	__neko_current_date
+	__neko_color_echo $__neko_color_purple (__neko_current_folder)
 	__neko_git_status
 	echo
 	__neko_color_echo $__neko_color_pink "\$ "
