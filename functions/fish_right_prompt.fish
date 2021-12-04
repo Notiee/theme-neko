@@ -37,6 +37,13 @@ function __get_duration
 end
 
 
+function __neko_current_date_right
+	__neko_color_echo $__neko_color_orange ' ['
+	__neko_color_echo $__neko_color_white (date "+%H:%M:%S")
+	__neko_color_echo $__neko_color_orange ']'
+end
+
+
 function __get_path
 	__neko_color_echo $__neko_color_grey (prompt_pwd)
 end
@@ -46,6 +53,7 @@ function fish_right_prompt
 	set -g exit_code $status
 
 	__get_path
-	__get_duration
-	__check_status
+	# __get_duration
+	# __check_status
+	__neko_current_date_right
 end

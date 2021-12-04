@@ -79,7 +79,7 @@ end
 # Display prompt
 function fish_prompt
 	__neko_color_echo $__neko_color_blue "# "
-	__neko_current_date
+	# __neko_current_date
 	__neko_color_echo $__neko_color_purple (__neko_current_folder)
 	__neko_git_status
 	echo
