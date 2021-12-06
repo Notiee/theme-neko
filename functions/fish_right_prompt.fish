@@ -45,7 +45,7 @@ end
 
 
 function __get_path
-	__neko_color_echo $__neko_color_grey (prompt_pwd)
+	__neko_color_echo $__neko_color_white (prompt_pwd)
 end
 
 
@@ -56,4 +56,5 @@ function fish_right_prompt
 	# __get_duration
 	# __check_status
 	__neko_current_date_right
+	__neko_color_echo $__neko_color_white
 end
