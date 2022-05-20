@@ -70,8 +70,11 @@ function __neko_git_status
 			__neko_git_status_icons
 		else
 			__neko_color_echo $__neko_color_green ' ●'
-			__neko_color_echo $__neko_color_white ' [^._.^]b'
+			__neko_color_echo $__neko_color_white ' [^._.^]'
 		end
+	# Not in gid
+	else
+		__neko_color_echo $__neko_color_white ' ㅇ'
 	end
 end
 
